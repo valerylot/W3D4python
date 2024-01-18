@@ -23,6 +23,8 @@ const expected4 = false;
 
 const str5 = "(y)l(jjkjk)jjkfjd)"
 
+const str6 = "()hg(hj:),.(kj)"
+
 /**
  * Determines whether the parenthesis in the given string are valid.
  * Each opening parenthesis must have exactly one closing parenthesis.
@@ -33,6 +35,7 @@ const str5 = "(y)l(jjkjk)jjkfjd)"
  */
 function parensValid(str) {
     let split_str = str.split('')
+    console.log(split_str)
     let count1 = 0
     let count2 = 0
     for (let i=0; i<split_str.length; i++){
@@ -68,4 +71,6 @@ console.log(parensValid(str2))
 console.log(parensValid(str3))
 console.log(parensValid(str4))
 console.log(parensValid(str5))
+console.log(parensValid(str6))
+
 /*****************************************************************************/
